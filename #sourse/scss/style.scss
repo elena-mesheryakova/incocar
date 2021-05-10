@@ -24,7 +24,8 @@ header {
   flex: 0 1 auto;
   position: relative;
 }
-.header__top {
+.header__top,
+.footer__bottom {
   background-color: #172027;
   &-wrap {
     display: flex;
@@ -55,7 +56,8 @@ header {
     margin-left: 12px;
   }
 }
-.header__bottom {
+.header__bottom,
+.footer__top {
   background-color: #f2f2f3;
   position: relative;
   &-nav ul {
@@ -75,4 +77,22 @@ main {
 }
 footer {
   flex: 0 0 auto;
+}
+.footer__top,
+.footer__bottom {
+  background-color: #797c7d;
+}
+.footer__top-nav {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer__top-link {
+  color: #fff;
+}
+.footer__bottom-copy {
+  color: #fff;
+  margin-top: 25px;
+}
+.footer__bottom-wrap {
+  padding-bottom: 70px;
 }

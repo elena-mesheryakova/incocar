@@ -1,11 +1,19 @@
 @media (max-width: 915px) {
-  .header__bottom-link {
+  .header__bottom-link,
+  .footer__top-link {
     font-size: 13px;
+  }
+  .footer__bottom-phone {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .header__top-phone {
+    display: none;
+  }
+  .footer__top-link,
+  .footer__bottom-social {
     display: none;
   }
   .header__bottom-burger {
@@ -73,16 +81,21 @@
   .header__bottom-link {
     font-size: 15px;
   }
+  body .footer__top-nav {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 630px) {
-  .header__top-social {
+  .header__top-social,
+  .footer__bottom-copy {
     display: none;
   }
 }
 
 @media (max-width: 490px) {
-  .header__top-btn {
+  .header__top-btn,
+  .footer__bottom-logo {
     display: none;
   }
 }
