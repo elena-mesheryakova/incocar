@@ -1,3 +1,12 @@
+@media (max-width: 1190px) {
+  body .products__inner {
+    justify-content: center;
+  }
+  body .blog__inner {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 990px) {
   .callback__img {
     display: none;
@@ -108,6 +117,10 @@
       url("../images/banner-avto.png") no-repeat right / contain,
       url("../images/banner.png") no-repeat center / auto 100%;
   }
+  body .product__item + .product__item,
+  body .blog__item + .blog__item {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 630px) {
@@ -126,6 +139,13 @@
   }
   body .banner__btn-testdrive {
     margin-bottom: 30px;
+  }
+  body .products__title,
+  body .blog__title {
+    font-size: 30px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    line-height: 1.1;
   }
 }
 
@@ -154,5 +174,17 @@
   }
   body .banner__btn-testdrive {
     margin-right: 0;
+  }
+  body .advantages__item {
+    flex-direction: column;
+  }
+  body .advantages__title {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 380px) {
+  body .product__item-info {
+    margin-left: 10px;
   }
 }

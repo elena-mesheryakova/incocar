@@ -312,7 +312,163 @@ main {
     width: 190px;
   }
 }
+.products {
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 96px;
+    padding-bottom: 70px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.product__item {
+  background-color: #fff;
+  box-shadow: 0px 9px 49px 0px #8e888829;
 
+  border-radius: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  & + .product__item {
+    margin-left: 20px;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 33px;
+    padding-bottom: 26px;
+    text-align: center;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+    span {
+      margin-left: 34px;
+    }
+  }
+  &-icon {
+    width: 28px;
+    margin-right: 11px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &-text {
+    font-weight: 700;
+    font-size: 18px;
+    width: 107px;
+    text-align-last: left;
+  }
+  &-btn {
+    margin-bottom: 37px;
+    margin-top: 32px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    padding: 17px 90px;
+    background: linear-gradient(360deg, #077a34 0%, #19e270 100%);
+    border-radius: 48px;
+    box-shadow: 0px 9px 48px 0px #18dc6d26;
+  }
+}
+.products__more {
+  text-align: center;
+  padding-bottom: 100px;
+  &-link {
+    color: #fff;
+    font-weight: 700;
+    padding: 17px 26px;
+    background: linear-gradient(360deg, #a8180f 0%, #dd463d 100%);
+    border-radius: 48px;
+    box-shadow: 0px 9px 48px 0px #d33d343d;
+  }
+}
+.advantages {
+  background-color: #eee;
+  box-shadow: 0px 9px 49px 0px #8e888829;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+  }
+  &__title {
+    padding-top: 96px;
+    padding-bottom: 38px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.1;
+  }
+  &__item {
+    display: flex;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    padding: 14px;
+    padding-left: 0;
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      padding-bottom: 9px;
+    }
+  }
+  &__icon {
+    width: 76px;
+    margin-right: 20px;
+  }
+}
+.map {
+  &__title {
+    padding-top: 96px;
+    padding-bottom: 70px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.1;
+  }
+}
+.blog {
+  &__title {
+    padding-top: 96px;
+    padding-bottom: 70px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.1;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  &__item + .blog__item {
+    margin-left: 20px;
+  }
+
+  &__item {
+    width: 368px;
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      padding-bottom: 12px;
+    }
+    &-text {
+      padding-bottom: 30px;
+    }
+  }
+  &__item-img {
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 40px;
+  }
+}
 footer {
   flex: 0 0 auto;
 }
