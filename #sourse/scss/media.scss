@@ -12,6 +12,13 @@
   .footer__bottom-phone {
     display: none;
   }
+  body .banner__info {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  body .banner__info-item {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -51,6 +58,7 @@
   .header__bottom-burger.active {
     span {
       height: 0;
+      z-index: 100;
     }
     span::after {
       transform: rotate(-45deg);
@@ -75,6 +83,7 @@
   .header__bottom-nav.active {
     opacity: 1;
     transition: all 0.5s;
+    z-index: 99;
   }
 
   .header__bottom-nav ul {
@@ -90,12 +99,33 @@
   body .footer__top-nav {
     padding-top: 0;
   }
+  body .banner {
+    background: linear-gradient(
+        81.5deg,
+        rgba(0, 0, 0, 0.584) 40.95%,
+        rgba(0, 0, 0, 0) 99.79%
+      ),
+      url("../images/banner-avto.png") no-repeat right / contain,
+      url("../images/banner.png") no-repeat center / auto 100%;
+  }
 }
 
 @media (max-width: 630px) {
   .header__top-social,
   .footer__bottom-copy {
     display: none;
+  }
+  body .banner__info {
+    justify-content: center;
+  }
+  body .banner__box {
+    padding-top: 100px;
+  }
+  body .banner__buttons {
+    flex-wrap: wrap;
+  }
+  body .banner__btn-testdrive {
+    margin-bottom: 30px;
   }
 }
 
@@ -110,5 +140,19 @@
   }
   body .callback__form {
     padding: 80px 50px;
+  }
+  body .banner__buttons {
+    padding-bottom: 80px;
+  }
+  body .banner__title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  body .banner__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  body .banner__btn-testdrive {
+    margin-right: 0;
   }
 }

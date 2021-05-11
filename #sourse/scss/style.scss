@@ -92,6 +92,9 @@ header {
     font-size: 25px;
     font-weight: 700;
     padding-bottom: 4px;
+    &.testdrive {
+      padding-bottom: 50px;
+    }
   }
   &-text {
     font-size: 13px;
@@ -164,8 +167,48 @@ header {
     appearance: none;
     position: absolute;
   }
-}
+  &-select {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    &-item + .callback__form-select-item {
+      margin-left: 33px;
+    }
+    &-item {
+      min-width: 117px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  .select-data {
+    padding-bottom: 8px;
+    margin-left: 8px;
 
+    &::before {
+      content: "";
+      background: url("../images/arrow-select.svg") no-repeat;
+      position: absolute;
+      top: 34px;
+      right: 12px;
+      width: 11px;
+      height: 5px;
+      z-index: 3;
+    }
+  }
+  select {
+    border-radius: 48px;
+    min-width: 117px;
+    width: 100%;
+    padding: 4px 15px;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+  }
+}
+.mfp-close-btn-in .mfp-close {
+  display: none;
+}
 .white-popup-block {
   display: flex;
   justify-content: center;
@@ -203,6 +246,73 @@ header {
 main {
   flex: 1 0 auto;
 }
+
+.banner {
+  background: linear-gradient(
+      81.5deg,
+      rgba(0, 0, 0, 0.584) 40.95%,
+      rgba(0, 0, 0, 0) 99.79%
+    ),
+    url("../images/banner-avto.png") no-repeat right,
+    url("../images/banner.png") no-repeat center / auto 100%;
+}
+.banner__box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 211px;
+  max-width: 580px;
+}
+.banner__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 44px;
+  line-height: 48px;
+}
+.banner__text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.banner__buttons {
+  display: flex;
+  padding-bottom: 180px;
+}
+.banner__btn-testdrive {
+  display: block;
+  color: #fff;
+  padding: 17px 92px;
+  background: linear-gradient(360deg, #077a34 0%, #19e270 100%);
+  margin-right: 46px;
+  border-radius: 48px;
+  height: 100%;
+}
+.banner__btn-arenda {
+  display: block;
+  color: #fff;
+  padding: 17px 47px;
+  background: linear-gradient(360deg, #a8180f 0%, #dd463d 100%);
+  border-radius: 48px;
+  height: 100%;
+}
+.banner__info {
+  display: flex;
+  padding-bottom: 80px;
+  justify-content: space-between;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  &-icon {
+    margin-right: 20px;
+  }
+  &-text {
+    color: #fff;
+    width: 190px;
+  }
+}
+
 footer {
   flex: 0 0 auto;
 }
