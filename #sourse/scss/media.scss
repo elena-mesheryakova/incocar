@@ -1,3 +1,9 @@
+@media (max-width: 990px) {
+  .callback__img {
+    display: none;
+  }
+}
+
 @media (max-width: 915px) {
   .header__bottom-link,
   .footer__top-link {
@@ -97,5 +103,12 @@
   .header__top-btn,
   .footer__bottom-logo {
     display: none;
+  }
+  body .callback__form-title {
+    text-align: center;
+    font-size: 20px;
+  }
+  body .callback__form {
+    padding: 80px 50px;
   }
 }
